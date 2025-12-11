@@ -160,7 +160,33 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/LeaveRequest/_LeaveDetailsIH"
+              "contextPath": "/LeaveRequest/_LeaveDetailsIH",
+              "content": {
+                "header": {
+                  "actions": {
+                    "approve": {
+                      "press": "leaveapp.ext.controller.ApproveRequestHandler.approveRequest",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "Approve ",
+                      "position": {
+                        "placement": "Before",
+                        "anchor": "DeleteAction"
+                      }
+                    },
+                    "reject": {
+                      "press": "leaveapp.ext.controller.ApproveRequestHandler.rejectRequest",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "Reject",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "approve"
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

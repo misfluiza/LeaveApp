@@ -333,9 +333,6 @@
                         <PropertyPath>Department</PropertyPath>
                         <PropertyPath>CreatedBy</PropertyPath>
                         <PropertyPath>CreatedAt</PropertyPath>
-                        <PropertyPath>LocalLastChangedBy</PropertyPath>
-                        <PropertyPath>LocalLastChangedAt</PropertyPath>
-                        <PropertyPath>LastChangedAt</PropertyPath>
                     </Collection>
                 </Annotation>
                 <Annotation Term="SAP__common.Messages" Path="SAP__Messages"/>
@@ -653,6 +650,11 @@
             </Annotations>
             <Annotations Target="SAP__self.LeaveDetailsType/Status">
                 <Annotation Term="SAP__common.Label" String="Status"/>
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Collection>
+                        <String>../../../../srvd_f4/sap/zc_status_vh/0001;ps='srvd-zui_employee_ih_o4-0001';va='com.sap.gateway.srvd.zui_employee_ih_o4.v0001.et-zc_leave_detail.status'/$metadata</String>
+                    </Collection>
+                </Annotation>
             </Annotations>
             <Annotations Target="SAP__self.LeaveDetailsType/CreatedBy">
                 <Annotation Term="SAP__core.Computed"/>
